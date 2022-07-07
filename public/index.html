@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <title>Otaku o peronista, un captcha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/chota">
+  <link rel="icon" type="image/png" href="logo.png" />
+</head>
+
+<body id="top">
+  <div class="container">
+    <div class="hero">
+      <div class="logo is-center is-vertical-align">
+        <img src="./logo.png" alt="">
+        <h3>Otaku o Peronista Captcha.</h3>
+      </div>
+    </div>
+    <section id="docs">
+      <p>
+        Robando la idea de <a href="https://twitter.com/nachoinventado/status/1463289179022966790?s=21">un tuit</a> y las imagenes de <a href="https://otakuoperonista.com/">¿Otaku o Peronista?</a> un captcha que te hace distinguir si la ✌️ la está haciendo un otaku o un peronista para validar que sos un humano. Probablemente no lo seas o probablemente este captcha tenga cero sentido.
+      </p>
+      <h4>¿Cómo se usa?</h4>
+      <ul>
+        <li>
+          Agregás el css en el head de tu página
+          <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://captcha.meme.ar/css/captcha.css"</span><span class="nt">&gt;</span></code></pre></figure>
+        </li>
+        <li>
+          Un div con el id "op-captcha"
+          <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"op-captcha"</span><span class="nt">&gt;</span><span class="nt">&lt;/div</span><span class="nt">&gt;</span></code></pre></figure>
+        </li>
+        <li>
+          Y este js al final
+            <!-- <script src="javascripts/captcha.js"></script> -->
+          <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">"https://captcha.meme.ar/javascripts/captcha.js"</span><span class="nt">&gt;</span><span class="nt">&lt;/script</span><span class="nt">&gt;</span></code></pre></figure>
+        </li>
+      </ul>
+      <p>
+        Una vez que el humano demostró ser humano, se guarda una cookie con un object que podés validar mandando en el body de un POST a https://captcha.meme.ar/captcha/validate
+      </p>
+      <p>
+        Mirate un <a href="/demo.html">demo</a>
+      </p>
+    </section>
+  </div>
+  <footer class="text-center">
+    <p><a href="https://github.com/baldosa/otaku-peronista-captcha">🐛 Reportar error o quejarse fuerte</a></p>
+    <h5>Hecho con amor a los memes usando la <a href="https://jenil.github.io/chota/">Chota</a></h5>
+  </footer>
+</body>
+
+</html>
